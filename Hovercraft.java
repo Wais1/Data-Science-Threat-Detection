@@ -1,6 +1,11 @@
 package com.company;
 
-public class Hovercraft implements LandVehicle, SeaVessel{
+public class Hovercraft extends Vehicle implements LandVehicle, SeaVessel{
+
+    public Hovercraft(String name, int getMaxPassengers, int maxSpeed) {
+        super(name, getMaxPassengers, maxSpeed);
+    }
+
     public void enterLand(){
         System.out.println("Enter land");
     }
@@ -15,6 +20,6 @@ public class Hovercraft implements LandVehicle, SeaVessel{
 
     @Override
     public void launch() {
-        System.out.println("Launches");
+        System.out.println("Launches " + displacement);
     }
 }

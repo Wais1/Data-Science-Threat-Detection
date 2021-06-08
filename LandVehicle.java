@@ -1,6 +1,6 @@
 package com.company;
 
-public interface LandVehicle extends Vehicle {
+public interface LandVehicle {
     int numWheels=4;
     void drive();
 }
